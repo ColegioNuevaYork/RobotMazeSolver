@@ -1,0 +1,3 @@
+void setupUltra(); 
+
+int distance(); 
