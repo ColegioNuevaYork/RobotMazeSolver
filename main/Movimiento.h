@@ -1,6 +1,7 @@
 void setupVehiculo(); 
 
-void moverAdelante();
-void moverAdelante();
-void moverAdelante();
-void moverAdelante();
+void movAdelante();
+void movAtras();
+void movIzquierda();
+void movDerecha();
+void stopMov(); 

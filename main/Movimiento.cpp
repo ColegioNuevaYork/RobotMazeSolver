@@ -39,7 +39,6 @@ void movDerecha() {
   digitalWrite(MOTORA_DER, LOW);
   digitalWrite(MOTORB_IZQ, LOW);
   digitalWrite(MOTORB_DER, HIGH);
-  delay(AngCalc(90));
 }
 
 // Movimiento con dirección occidental
@@ -48,7 +47,6 @@ void movIzquierda() {
   digitalWrite(MOTORA_DER, HIGH);
   digitalWrite(MOTORB_IZQ, HIGH);
   digitalWrite(MOTORB_DER, LOW);
-  delay(AngCalc(-90));
 }
 
 // Detener movimiento
@@ -58,6 +56,11 @@ void stopMov() {
   digitalWrite(MOTORB_IZQ, LOW);
   digitalWrite(MOTORB_DER, LOW);
 }
+
+
+
+
+
 
 
 

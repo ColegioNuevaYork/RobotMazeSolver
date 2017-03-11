@@ -1,3 +1,3 @@
-void setupUltra(); 
+void setupUltra(int echo, int trigger); 
 
-int distance(); 
+int getDistance(int echo, int trigger); 

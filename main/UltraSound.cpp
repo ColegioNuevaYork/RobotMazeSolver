@@ -1,18 +1,14 @@
 #include<Arduino.h>
 
-// Declaración de Variables
-#define echo 8
-#define trigger 9
+int dis;
 
-int dis; 
-
-void setupUltra(){
+void setupUltra(int echo, int trigger) {
   // Declaración de componentes ultrasonido
   pinMode(echo, INPUT);
   pinMode(trigger, OUTPUT);
 }
 
-int distance(){ 
+int getDistance(int echo, int trigger) {
   digitalWrite(trigger, LOW);
   delayMicroseconds(2);
   digitalWrite(trigger, HIGH);
@@ -20,7 +16,7 @@ int distance(){
   digitalWrite(trigger, LOW);
   float timeEcho = pulseIn(echo , HIGH);
   dis = constrain((timeEcho / 58.138), 2, 30);
-  Serial.print("Distancia: ");
-  Serial.println(int(dis));
+  // Serial.print("Distancia: ");
+  // Serial.println(int(dis));
   return dis;
 }

@@ -1,3 +1,3 @@
 void setupAngl();
 
-int AngCalc(int angle);
+int angCalc(int angle);
